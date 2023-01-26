@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 20%;
+  position: relative;
+  left: 200px;
+  top: 30px;
+}
+
+body {
+  height: 100vh;
+  background-color: #F2F2F2;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.main-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-text {
+  width: 311px;
+  margin: 5.250em 2em 4.750em 2em;
+  text-align: center;
+}
+
+.main-text h1 {
+  font-weight: 200;
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.main-text span {
+  font-weight: 600;
+}
+
+.main-text p {
+  color: #4D4F62;
+  opacity: 0.5;
+  font-size: 0.94em;
+}
+.container {
+  padding: 27px 0px 0px 28px;
+  margin-bottom: 1.56em;
+  border-radius: 8px;
+  box-shadow: 1px 10px 15px 3px #E0E8F3;
+}
+
+.title {
+  font-size: 1.250rem;
+  font-weight: 600;
+  color: #4D4F62;
+}
+
+.paragraph {
+  font-size: 0.81rem;
+  color: #4D4F62;
+  opacity: 0.5;
+}
+
+.containers {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  background-color: #FFFFFF;
+  width: 311px;
+  height: 222px;
+}
+
+.supervisor {
+  border-top: 4px solid #44D3D2;
+}
+
+.teamb {
+  border-top: 4px solid #FF637B;
+}
+
+.karma {
+  border-top: 4px solid #FDBF00;
+}
+
+.calculator {
+  border-top: 4px solid #377FD2;
+}
+
+@media only screen and (min-width: 1000px) {
+  
+  .containers {
+    flex-direction: row;
+  }
+
+}
