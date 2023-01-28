@@ -22,9 +22,8 @@ body {
 
 
 .main-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  justify-items: center;
 }
 
 .main-text {
@@ -67,11 +66,6 @@ body {
   opacity: 0.5;
 }
 
-.containers {
-  display: flex;
-  flex-direction: column;
-}
-
 .container {
   background-color: #FFFFFF;
   width: 311px;
@@ -96,8 +90,38 @@ body {
 
 @media only screen and (min-width: 1000px) {
   
-  .containers {
-    flex-direction: row;
+  .containers { 
+    display: grid;
+    grid-template: repeat(4, 100px) / repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
   }
 
+  .supervisor {
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+
+  .teamb {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .karma {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+  }
+
+  .calculator {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+
+
 }
+
