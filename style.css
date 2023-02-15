@@ -90,7 +90,7 @@ body {
   
   .containers { 
     display: grid;
-    grid-template: repeat(3) / repeat(3, 1fr);
+    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
     gap: 30px;
     justify-items: center;
     max-width: 1110px;
@@ -115,14 +115,14 @@ body {
     margin-bottom: 4.256em;
   }
 
-
-
   .title {
     margin-bottom: 0.3em;
   }
 
   .paragraph {
+    font-size: 0.625rem;
     margin-bottom: 3.068em;
+    line-height: 1.8;
   }
 
   .supervisor {
@@ -141,6 +141,7 @@ body {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
+    grid-row-end: 5;
   }
 
   .calculator {
